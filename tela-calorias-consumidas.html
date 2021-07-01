@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css-styles/style-tela-calorias-consumidas.css" rel="stylesheet" media="screen" type="text/css" />
+    <title>Health Track - Calorias Consumidas</title>
+</head>
+<body>
+    <main class="container">
+        <i class="fas fa-plus-circle"><strong>Calorias Consumidas</strong></i><br />
+
+        <div class="position-absolute top-10 start-50 translate-middle">
+            <input class="data-acesso" type="date" placeholder="Ex.: 22/06/2021"><br />
+        </div>   <br /><br />
+
+        <div style="overflow-x:auto;">
+            <table class="table table-hover">
+                <tr class="valor-indicador">
+                    <th>
+                        <h2 class="text-table-item">Refeição</h2>
+                    </th>
+                    <th>
+                        <h2 class="text-table-item">Qtde</h2>
+                    </th>
+                    <th>
+                        <h2 class="text-table-item">Calorias</h2>
+                    </th>
+                    <th>
+                        <h2 class="text-table-item">Editar</h2>
+                    </th>
+                </tr>
+                <tr class="valor-indicador">
+                    <td>
+                        <h2 class="text-table-valor">Feijoada</h2>
+                    </td>
+                    <td>
+                        <h2 class="text-table-valor">350g</h2>
+                    </td>
+                    <td>
+                        <h2 class="text-table-valor">550 Kcal</h2>
+                    </td>
+                    <td>
+                        <h2 class="text-table-valor">X</h2>
+                    </td>
+                </tr>
+                <tr class="valor-indicador">
+                    <td>
+                        <h2 class="text-table-valor">Salada</h2>
+                    </td>
+                    <td>
+                        <h2 class="text-table-valor">150g</h2>
+                    </td>
+                    <td>
+                        <h2 class="text-table-valor">85 Kcal</h2>
+                    </td>
+                    <td>
+                        <h2 class="text-table-valor">X</h2>
+                    </td>
+                </tr>
+                <tr class="valor-indicador">
+                    <td>
+                        <h2 class="text-table-valor">Suco natural</h2>
+                    </td>
+                    <td>
+                        <h2 class="text-table-valor">200ml</h2>
+                    </td>
+                    <td>
+                        <h2 class="text-table-valor">100 Kcal</h2>
+                    </td>
+                    <td>
+                        <h2 class="text-table-valor">X</h2>
+                    </td>
+                </tr>
+                <tr class="valor-totalizador">
+                    <th>
+                        <h2 class="text-table-total"></h2>
+                    </th>
+                    <th>
+                        <h2 class="text-table-total"><strong>Calorias Consumidas:</strong></h2>
+                    </th>
+                    <th>
+                        <h2 class="text-table-total"><strong>735 Kcal</strong></h2>
+                    </th>
+                    <th>
+                        <h2 class="text-table-total"></h2>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="add-alimento-consumido">
+            <i class="fas fa-plus-circle fa-5x"></i>
+        </div>
+
+    </main>
+</body>
+</html>

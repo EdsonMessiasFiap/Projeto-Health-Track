@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <link href="css-styles/style-tela-principal.css" rel="stylesheet" media="screen" type="text/css" />
+    <title>Health Track - Dashboard</title>
+</head>
+<body>
+    <main class="container">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="tela-perfil.html">Perfil</a>
+            <a href="tela-calorias-consumidas.html">Calorias Consumidas</a>
+            <a href="tela-calorias-perdidas.html">Atividades Realizadas</a>
+            <a href="tela-pressao-pulsacao.html">Pressão Arterial e Pulsação</a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <i class="fas fa-plus-circle"><strong>Health Track</strong></i> <br />
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "0px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+
+        <div class="position-absolute top-10 start-50 translate-middle">
+            <input class="data-acesso" type="date" placeholder="Ex.: 22/06/2021"><br />
+        </div>   <br />
+
+        <table class="table table-hover">
+            <tr class="valor-indicador">
+                <th>
+                    <h2 class="text-table-item">IMC</h2>
+                </th>
+                <th>
+                    <h2 class="text-table-item">Taxa de Gordura</h2>
+                </th>
+            </tr>
+            <tr class="valor-indicador">
+                <td>
+                    <h2 class="text-table-valor"><strong>24,98</strong></h2>
+                </td>
+                <td>
+                    <h2 class="text-table-valor"><strong>19,45%</strong></h2>
+                </td>
+            </tr>
+
+            <tr class="valor-indicador">
+                <th colspan="2">
+                    <h2 class="text-table-item">Peso Ideal</h2>
+                </th>
+            </tr>
+            <tr class="valor-indicador">
+                <td colspan="2">
+                    <h2 class="text-table-valor"><strong>53,80 - 62,50 Kg</strong></h2>
+                </td>
+            </tr>
+        </table>
+
+        <div class="indicadores-dashboard">
+            <h2>Calorias Consumidas</h2>
+            <p><strong>735 Kcal</strong></p>
+
+            <h2>Calorias Perdidas</h2>
+            <p><strong>795 Kcal</strong></p>
+        </div>
+
+        <div class="menu-funcoes">
+            <div class="menu-opcoes calorias">
+                <a href="tela-calorias-consumidas.html">
+                    <i class="fas fa-utensils fa-3x img-tamanho"></i>
+                </a>
+            </div>
+            <div class="menu-opcoes exercicios">
+                <a href="tela-calorias-perdidas.html">
+                    <i class="fas fa-running fa-3x img-tamanho"></i>
+                </a>
+            </div>
+            <div class="menu-opcoes coracao">
+                <a href="tela-pressao-pulsacao.html">
+                    <i class="fas fa-heartbeat fa-3x img-tamanho"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

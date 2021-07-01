@@ -1,0 +1,73 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(#ccc6c6, #bdb9b9, rgba(0, 0, 0, 0.5));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: white;
+    min-width: 500px;
+    min-height: 80vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+    main.container i {
+        margin-top: 0.85rem;
+        font-size: 1.85rem;
+        margin-top: 0.35rem;
+        margin-left: 5rem;
+        color: #1a95ac;
+        margin-bottom: 2rem;
+    }
+
+.data-acesso {
+    margin-top: 0.8rem;
+    width: 12vw;
+    text-align: center;
+    font-size: 1rem;
+    color: #092935;
+    margin-bottom: 2rem;
+}
+
+
+.table th, td {
+    padding: 3px;
+    text-align: center;
+    align-content: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.text-table-item {
+    font-size: 1.2rem;
+}
+
+.text-table-valor {
+    font-size: 1.1rem;
+    color: #32aedd;
+}
+
+.text-table-total {
+    font-size: 1.3rem;
+    color: #1a95ac;
+}
+
+main.container div[class="add-alimento-consumido"] {
+    text-align: center;
+    margin-top: 5rem;
+}
